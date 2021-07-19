@@ -1,3 +1,7 @@
+# Kanged from 
+# https://github.com/TeamWin/android_device_samsung_treltexx/blob/android-7.1/recovery/root/init.recovery.usb.rc
+# This init is necessary to make adbd work.  However, it takes about 10 seconds for adbd and mtp to work after initial TWRP home screen pops up.
+
 on boot
     setprop sys.usb.config mtp,adb
     setprop usb.vendor 04e8
